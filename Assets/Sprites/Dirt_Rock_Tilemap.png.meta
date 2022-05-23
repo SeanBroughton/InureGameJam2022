@@ -1,0 +1,794 @@
+fileFormatVersion: 2
+guid: 09192c3db51c97c45adab54d14c2c367
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Dirt_Rock_Tilemap_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 190
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85149b66c43751245815cd6b75045fb5
+      internalID: 69408378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dirt_Rock_Tilemap_1
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 190
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 712deb9fa3f69d34184d394bf5c5bed7
+      internalID: -12953357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dirt_Rock_Tilemap_2
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 190
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4578acf920f0be44e9b8594fda09b6b4
+      internalID: -1003945603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dirt_Rock_Tilemap_3
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 190
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50da50e960ea81443be6a646ed7792f4
+      internalID: -1596238378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dirt_Rock_Tilemap_4
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 190
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67c9fe18fb71fa24385ac4d9a6493181
+      internalID: -281019236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dirt_Rock_Tilemap_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 152
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 714c10ca3fd12de49aaa26f39b1137fd
+      internalID: 1524987300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dirt_Rock_Tilemap_6
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 152
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd5a31f817b8c454f8c3ef3fdc372ba2
+      internalID: -1635690253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dirt_Rock_Tilemap_7
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 152
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f699d66dd231f554d856ddebbef3af80
+      internalID: 1790640788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dirt_Rock_Tilemap_8
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 152
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b7414c94a8c26242a09974f4c521f39
+      internalID: -1459798668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dirt_Rock_Tilemap_9
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 152
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4948ab172ea4a034aae9d3876260d712
+      internalID: 772480402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dirt_Rock_Tilemap_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 114
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 416ff5c38bcfa4241a63823d956d5400
+      internalID: -678730352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dirt_Rock_Tilemap_11
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 114
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c8fbafd3176b4e478c2af385c7e10ee
+      internalID: -324004788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dirt_Rock_Tilemap_12
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 114
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb074613a7783c94496987d6b0690110
+      internalID: 2112071507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dirt_Rock_Tilemap_13
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 114
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ceedf2f34727d594db339f44962425fc
+      internalID: -948503112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dirt_Rock_Tilemap_14
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 114
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dadd2fa2ca105394f98359fc4e3de790
+      internalID: -718038462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dirt_Rock_Tilemap_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 76
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6b8b5016f00dc24481f09983849921a
+      internalID: 2031664515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dirt_Rock_Tilemap_16
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 76
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03f249a7b8a41634381674e98e16cb02
+      internalID: 1698312548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dirt_Rock_Tilemap_17
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 76
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d49c6be61e6d37340904b04b487b66db
+      internalID: 138418588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dirt_Rock_Tilemap_18
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 76
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9261082056dc7a45bcfd4ba4e3f6e8e
+      internalID: 1539930180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dirt_Rock_Tilemap_19
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 76
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60335c180019b9041be3bf1d2294bfd6
+      internalID: 536245305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dirt_Rock_Tilemap_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 38
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e694ae7f02926444b8b4e153342dda8
+      internalID: -1235179568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dirt_Rock_Tilemap_21
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 38
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8adfab916400377449a03852291325c9
+      internalID: -113894936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dirt_Rock_Tilemap_22
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 38
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5598059d938679848a9cafcb3512dd3d
+      internalID: 1366416307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dirt_Rock_Tilemap_23
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 38
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93b1aee53d4afa3419e6820256bea937
+      internalID: 2078337286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dirt_Rock_Tilemap_24
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 38
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de00ba4ba45770a498da5f76798a3394
+      internalID: 442995329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dirt_Rock_Tilemap_25
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 0
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac2aa4af4a1616c4fb3d7db3faec0616
+      internalID: -1358012942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dirt_Rock_Tilemap_26
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad83474d7991b6d44a366c055953dd07
+      internalID: 1061160116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dirt_Rock_Tilemap_27
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dda1d9a83f1f5944db65745f58987823
+      internalID: 1864005750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dirt_Rock_Tilemap_28
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0365b8898e0c11d41b2da484900714f7
+      internalID: -894399748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dirt_Rock_Tilemap_29
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2477888cc29b8d64cb8c3b73c54b9fb9
+      internalID: 1804709894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Dirt_Rock_Tilemap_24: 442995329
+      Dirt_Rock_Tilemap_0: 69408378
+      Dirt_Rock_Tilemap_6: -1635690253
+      Dirt_Rock_Tilemap_9: 772480402
+      Dirt_Rock_Tilemap_27: 1864005750
+      Dirt_Rock_Tilemap_28: -894399748
+      Dirt_Rock_Tilemap_26: 1061160116
+      Dirt_Rock_Tilemap_12: 2112071507
+      Dirt_Rock_Tilemap_1: -12953357
+      Dirt_Rock_Tilemap_8: -1459798668
+      Dirt_Rock_Tilemap_15: 2031664515
+      Dirt_Rock_Tilemap_25: -1358012942
+      Dirt_Rock_Tilemap_22: 1366416307
+      Dirt_Rock_Tilemap_17: 138418588
+      Dirt_Rock_Tilemap_14: -718038462
+      Dirt_Rock_Tilemap_19: 536245305
+      Dirt_Rock_Tilemap_29: 1804709894
+      Dirt_Rock_Tilemap_21: -113894936
+      Dirt_Rock_Tilemap_7: 1790640788
+      Dirt_Rock_Tilemap_5: 1524987300
+      Dirt_Rock_Tilemap_13: -948503112
+      Dirt_Rock_Tilemap_23: 2078337286
+      Dirt_Rock_Tilemap_16: 1698312548
+      Dirt_Rock_Tilemap_2: -1003945603
+      Dirt_Rock_Tilemap_10: -678730352
+      Dirt_Rock_Tilemap_18: 1539930180
+      Dirt_Rock_Tilemap_11: -324004788
+      Dirt_Rock_Tilemap_3: -1596238378
+      Dirt_Rock_Tilemap_20: -1235179568
+      Dirt_Rock_Tilemap_4: -281019236
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
