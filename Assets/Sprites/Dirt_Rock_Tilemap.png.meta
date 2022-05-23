@@ -47,7 +47,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 32
+  spritePixelsToUnits: 31
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -756,12 +756,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Dirt_Rock_Tilemap_24: 442995329
+      Dirt_Rock_Tilemap_28: -894399748
       Dirt_Rock_Tilemap_0: 69408378
       Dirt_Rock_Tilemap_6: -1635690253
       Dirt_Rock_Tilemap_9: 772480402
       Dirt_Rock_Tilemap_27: 1864005750
-      Dirt_Rock_Tilemap_28: -894399748
+      Dirt_Rock_Tilemap_24: 442995329
       Dirt_Rock_Tilemap_26: 1061160116
       Dirt_Rock_Tilemap_12: 2112071507
       Dirt_Rock_Tilemap_1: -12953357
