@@ -38,13 +38,16 @@ public class PlayerMovement : MonoBehaviour
     //gives the player the ability to jump
     void OnJump(InputValue value)
     {
+
+        //allows the player to jump only when they are touching the Ground
+        if(!myCapsuleCollider.IsTouchingLayers(LayerMask.GetMask("Ground"))) {return;}
+
         if(value.isPressed)
         {
             myRigidbody.velocity += new Vector2 (0f, jumpSpeed);
         }
 
-        //allows the player to jump only when they are touching the Ground
-        if(!myCapsuleCollider.IsTouchingLayers(LayerMask.GetMask("Ground"))) {return;}
+      
     }
 
     //gives the player movement and speed on the x axis
