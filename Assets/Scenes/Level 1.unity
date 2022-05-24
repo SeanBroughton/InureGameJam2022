@@ -10254,7 +10254,7 @@ GameObject:
   - component: {fileID: 651934316}
   - component: {fileID: 651934315}
   - component: {fileID: 651934314}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Tm_Platforms
   m_TagString: Untagged
   m_Icon: {fileID: 0}

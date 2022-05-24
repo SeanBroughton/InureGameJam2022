@@ -5,22 +5,24 @@ using UnityEngine.InputSystem;
 
 public class PlayerMovement : MonoBehaviour
 {
-   // Added UnityEngine.InputSystem to use player controls
+   //added UnityEngine.InputSystem to use player controls
 
     Vector2 moveInput;
     Rigidbody2D myRigidbody;
     Animator myAnimator;
+    CapsuleCollider2D myCapsuleCollider;
     [SerializeField] float runSpeed = 10f;
     [SerializeField] float jumpSpeed = 5f;
 
     void Start()
     {
-        // Gets access to the players components in unity to edit in the code script
+        //gets access to the players components in unity to edit in the code script
         myRigidbody = GetComponent<Rigidbody2D>();
         myAnimator = GetComponent<Animator>();
+        myCapsuleCollider = GetComponent<CapsuleCollider2D>();
     }
 
-    //Runs all of our constant methods
+    //runs all of our constant methods
     void Update()
     {
         Run();
@@ -40,6 +42,9 @@ public class PlayerMovement : MonoBehaviour
         {
             myRigidbody.velocity += new Vector2 (0f, jumpSpeed);
         }
+
+        //allows the player to jump only when they are touching the Ground
+        if(!myCapsuleCollider.IsTouchingLayers(LayerMask.GetMask("Ground"))) {return;}
     }
 
     //gives the player movement and speed on the x axis
