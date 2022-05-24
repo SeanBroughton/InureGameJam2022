@@ -20,7 +20,7 @@ public class PlayerMovement : MonoBehaviour
         myAnimator = GetComponent<Animator>();
     }
 
-    //Runs all of our methods
+    //Runs all of our constant methods
     void Update()
     {
         Run();
@@ -33,6 +33,7 @@ public class PlayerMovement : MonoBehaviour
         moveInput = value.Get<Vector2>();
     }
 
+    //gives the player the ability to jump
     void OnJump(InputValue value)
     {
         if(value.isPressed)
