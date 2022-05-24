@@ -11,7 +11,8 @@ public class PlayerMovement : MonoBehaviour
     Rigidbody2D myRigidbody;
     Animator myAnimator;
     [SerializeField] float runSpeed = 10f;
-    
+    [SerializeField] float jumpSpeed = 5f;
+
     void Start()
     {
         // Gets access to the players components in unity to edit in the code script
@@ -30,6 +31,14 @@ public class PlayerMovement : MonoBehaviour
     void OnMove(InputValue value)
     {
         moveInput = value.Get<Vector2>();
+    }
+
+    void OnJump(InputValue value)
+    {
+        if(value.isPressed)
+        {
+            myRigidbody.velocity += new Vector2 (0f, jumpSpeed);
+        }
     }
 
     //gives the player movement and speed on the x axis
