@@ -72,10 +72,11 @@ public class PlayerMovement : MonoBehaviour
         }
        
     }
-
+    
+    //gives the player the ability to use ladders
     void ClimbLadder()
     {
-
+        //stops the player from climbing infinitely by locking climbing to the ladder sprite
         if(!myCapsuleCollider.IsTouchingLayers(LayerMask.GetMask("Climbing"))) {return;}
 
         Vector2 climbVelocity = new Vector2 (myRigidbody.velocity.x, moveInput.y * climbSpeed);
