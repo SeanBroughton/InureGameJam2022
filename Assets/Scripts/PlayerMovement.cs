@@ -11,8 +11,10 @@ public class PlayerMovement : MonoBehaviour
     Rigidbody2D myRigidbody;
     Animator myAnimator;
     CapsuleCollider2D myCapsuleCollider;
+    float gravityScaleAtStart;
     [SerializeField] float runSpeed = 10f;
     [SerializeField] float jumpSpeed = 5f;
+    [SerializeField] float climbSpeed = 5f;
 
     void Start()
     {
@@ -20,6 +22,7 @@ public class PlayerMovement : MonoBehaviour
         myRigidbody = GetComponent<Rigidbody2D>();
         myAnimator = GetComponent<Animator>();
         myCapsuleCollider = GetComponent<CapsuleCollider2D>();
+        gravityScaleAtStart = myRigidbody.gravityScale;
     }
 
     //runs all of our constant methods
@@ -27,6 +30,7 @@ public class PlayerMovement : MonoBehaviour
     {
         Run();
         FlipSprite();
+        ClimbLadder();
     }
 
     //creates number values to create player movement ex: (1,0) (0,1)
@@ -53,11 +57,19 @@ public class PlayerMovement : MonoBehaviour
     //gives the player movement and speed on the x axis
     void Run()
     {
+    
         Vector2 playerVelocity = new Vector2 (moveInput.x * runSpeed, myRigidbody.velocity.y);
         myRigidbody.velocity = playerVelocity;
-
+        
         bool playerHasHorizontalSpeed = Mathf.Abs(myRigidbody.velocity.x) > Mathf.Epsilon;
         myAnimator.SetBool("isRunning", playerHasHorizontalSpeed);
+
+        //stops the run animation from playing while on a ladder
+        if(myCapsuleCollider.IsTouchingLayers(LayerMask.GetMask("Climbing"))) 
+        {
+            myAnimator.SetBool("isRunning", false);
+            return;
+        }
     }
 
     //makes the player flip facing direction when moving
@@ -69,5 +81,26 @@ public class PlayerMovement : MonoBehaviour
              transform.localScale = new Vector2 (Mathf.Sign(myRigidbody.velocity.x), 1f);
         }
        
+    }
+    
+    //gives the player the ability to use ladders
+    void ClimbLadder()
+    {
+        //stops the player from climbing infinitely by locking climbing to the ladder sprite
+        if(!myCapsuleCollider.IsTouchingLayers(LayerMask.GetMask("Climbing"))) 
+        {
+            myRigidbody.gravityScale = gravityScaleAtStart;
+            myAnimator.SetBool("isClimbing", false);
+            return;
+        }
+
+        Vector2 climbVelocity = new Vector2 (myRigidbody.velocity.x, moveInput.y * climbSpeed);
+        myRigidbody.velocity = climbVelocity;
+        myRigidbody.gravityScale= 0f;
+
+        //plays the climbing animation when moving on the ladder
+        bool playerHasVerticalSpeed = Mathf.Abs(myRigidbody.velocity.y) > Mathf.Epsilon;
+        myAnimator.SetBool("isClimbing", playerHasVerticalSpeed);
+
     }
 }
