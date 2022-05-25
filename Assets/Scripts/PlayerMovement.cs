@@ -11,6 +11,7 @@ public class PlayerMovement : MonoBehaviour
     Rigidbody2D myRigidbody;
     Animator myAnimator;
     CapsuleCollider2D myCapsuleCollider;
+    float gravityScaleAtStart;
     [SerializeField] float runSpeed = 10f;
     [SerializeField] float jumpSpeed = 5f;
     [SerializeField] float climbSpeed = 5f;
@@ -21,6 +22,7 @@ public class PlayerMovement : MonoBehaviour
         myRigidbody = GetComponent<Rigidbody2D>();
         myAnimator = GetComponent<Animator>();
         myCapsuleCollider = GetComponent<CapsuleCollider2D>();
+        gravityScaleAtStart = myRigidbody.gravityScale;
     }
 
     //runs all of our constant methods
@@ -77,9 +79,14 @@ public class PlayerMovement : MonoBehaviour
     void ClimbLadder()
     {
         //stops the player from climbing infinitely by locking climbing to the ladder sprite
-        if(!myCapsuleCollider.IsTouchingLayers(LayerMask.GetMask("Climbing"))) {return;}
+        if(!myCapsuleCollider.IsTouchingLayers(LayerMask.GetMask("Climbing"))) 
+        {
+            myRigidbody.gravityScale = gravityScaleAtStart;
+            return;
+        }
 
         Vector2 climbVelocity = new Vector2 (myRigidbody.velocity.x, moveInput.y * climbSpeed);
         myRigidbody.velocity = climbVelocity;
+        myRigidbody.gravityScale= 0f;
     }
 }
