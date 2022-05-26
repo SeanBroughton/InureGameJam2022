@@ -8,7 +8,7 @@ public class PlayerMovement : MonoBehaviour
    //added UnityEngine.InputSystem to use player controls
 
     Vector2 moveInput;
-    Rigidbody2D myRigidbody;
+    Rigidbody2D myRigidBody;
     Animator myAnimator;
     CapsuleCollider2D myBodyCollider;
     BoxCollider2D myFeetCollider;
@@ -20,11 +20,11 @@ public class PlayerMovement : MonoBehaviour
     void Start()
     {
         //gets access to the players components in unity to edit in the code script
-        myRigidbody = GetComponent<Rigidbody2D>();
+        myRigidBody = GetComponent<Rigidbody2D>();
         myAnimator = GetComponent<Animator>();
         myBodyCollider = GetComponent<CapsuleCollider2D>();
         myFeetCollider = GetComponent<BoxCollider2D>();
-        gravityScaleAtStart = myRigidbody.gravityScale;
+        gravityScaleAtStart = myRigidBody.gravityScale;
     }
 
     //runs all of our constant methods
@@ -50,7 +50,7 @@ public class PlayerMovement : MonoBehaviour
        
         if(value.isPressed)
         {
-            myRigidbody.velocity += new Vector2 (0f, jumpSpeed);
+            myRigidBody.velocity += new Vector2 (0f, jumpSpeed);
         }
 
         //stops the player from wall running
@@ -62,10 +62,10 @@ public class PlayerMovement : MonoBehaviour
     void Run()
     {
     
-        Vector2 playerVelocity = new Vector2 (moveInput.x * runSpeed, myRigidbody.velocity.y);
-        myRigidbody.velocity = playerVelocity;
+        Vector2 playerVelocity = new Vector2 (moveInput.x * runSpeed, myRigidBody.velocity.y);
+        myRigidBody.velocity = playerVelocity;
         
-        bool playerHasHorizontalSpeed = Mathf.Abs(myRigidbody.velocity.x) > Mathf.Epsilon;
+        bool playerHasHorizontalSpeed = Mathf.Abs(myRigidBody.velocity.x) > Mathf.Epsilon;
         myAnimator.SetBool("isRunning", playerHasHorizontalSpeed);
 
         //stops the run animation from playing while on a ladder
@@ -79,10 +79,10 @@ public class PlayerMovement : MonoBehaviour
     //makes the player flip facing direction when moving
     void FlipSprite()
     {
-        bool playerHasHorizontalSpeed = Mathf.Abs(myRigidbody.velocity.x) > Mathf.Epsilon;
+        bool playerHasHorizontalSpeed = Mathf.Abs(myRigidBody.velocity.x) > Mathf.Epsilon;
         if(playerHasHorizontalSpeed)
         {
-             transform.localScale = new Vector2 (Mathf.Sign(myRigidbody.velocity.x), 1f);
+             transform.localScale = new Vector2 (Mathf.Sign(myRigidBody.velocity.x), 1f);
         }
        
     }
@@ -93,17 +93,17 @@ public class PlayerMovement : MonoBehaviour
         //stops the player from climbing infinitely by locking climbing to the ladder sprite
         if(!myFeetCollider.IsTouchingLayers(LayerMask.GetMask("Climbing"))) 
         {
-            myRigidbody.gravityScale = gravityScaleAtStart;
+            myRigidBody.gravityScale = gravityScaleAtStart;
             myAnimator.SetBool("isClimbing", false);
             return;
         }
 
-        Vector2 climbVelocity = new Vector2 (myRigidbody.velocity.x, moveInput.y * climbSpeed);
-        myRigidbody.velocity = climbVelocity;
-        myRigidbody.gravityScale= 0f;
+        Vector2 climbVelocity = new Vector2 (myRigidBody.velocity.x, moveInput.y * climbSpeed);
+        myRigidBody.velocity = climbVelocity;
+        myRigidBody.gravityScale= 0f;
 
         //plays the climbing animation when moving on the ladder
-        bool playerHasVerticalSpeed = Mathf.Abs(myRigidbody.velocity.y) > Mathf.Epsilon;
+        bool playerHasVerticalSpeed = Mathf.Abs(myRigidBody.velocity.y) > Mathf.Epsilon;
         myAnimator.SetBool("isClimbing", playerHasVerticalSpeed);
 
     }
