@@ -15,7 +15,8 @@ GameObject:
   - component: {fileID: 8656237229510408107}
   - component: {fileID: 5153376455755007029}
   - component: {fileID: 2375335186551492376}
-  m_Layer: 0
+  - component: {fileID: 6062840186232257549}
+  m_Layer: 8
   m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -96,7 +97,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 626473235
-  m_SortingLayer: 4
+  m_SortingLayer: 5
   m_SortingOrder: 0
   m_Sprite: {fileID: -1507907338, guid: b8afc54756e8b3e45beaad75d450f3e8, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -124,7 +125,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 5
+  m_GravityScale: 4
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -143,8 +144,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.03748846, y: -0.35443604}
-  m_Size: {x: 0.43911648, y: 1.3047597}
+  m_Offset: {x: -0.03748846, y: -0.35078824}
+  m_Size: {x: 0.43911648, y: 1.2974641}
   m_Direction: 0
 --- !u!114 &5153376455755007029
 MonoBehaviour:
@@ -189,4 +190,31 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   runSpeed: 10
-  jumpSpeed: 15.25
+  jumpSpeed: 14
+  climbSpeed: 15
+--- !u!61 &6062840186232257549
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4589557995406318812}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 6200000, guid: 236a20a2474bde57fb35f904714b082a, type: 2}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.099039644, y: -0.8750448}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2, y: 2}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.8164577, y: 0.085779905}
+  m_EdgeRadius: 0
