@@ -48,12 +48,12 @@ public class PlayerMovement : MonoBehaviour
         //allows the player to jump only when they are touching the Ground
         if(!myBodyCollider.IsTouchingLayers(LayerMask.GetMask("Ground"))) {return;}
        
-
         if(value.isPressed)
         {
             myRigidbody.velocity += new Vector2 (0f, jumpSpeed);
         }
 
+        //stops the player from wall running
         if(myFeetCollider.IsTouchingLayers(LayerMask.GetMask("Ground"))) {return;}
       
     }
