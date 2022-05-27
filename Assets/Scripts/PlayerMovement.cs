@@ -18,6 +18,8 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] float jumpSpeed = 5f;
     [SerializeField] float climbSpeed = 5f;
     [SerializeField] Vector2 deathKick = new Vector2(10f, 10f);
+    [SerializeField] GameObject bullet;
+    [SerializeField] Transform gun;
 
     void Start()
     {
@@ -38,6 +40,14 @@ public class PlayerMovement : MonoBehaviour
         FlipSprite();
         ClimbLadder();
         Die();    
+    }
+
+    //gives the player the ability to shoot bullets
+    void OnFire(InputValue value)
+    {
+        if (!isAlive) {return;}
+
+        Instantiate(bullet, gun.position, transform.rotation);
     }
 
     //creates number values to create player movement ex: (1,0) (0,1)
@@ -123,6 +133,9 @@ public class PlayerMovement : MonoBehaviour
             isAlive = false;
             myAnimator.SetTrigger("Dying");
             myRigidBody.velocity = deathKick;
+            
+            //triggers the reset of the game when the player runs out of lives
+            FindObjectOfType<GameSession>().ProcessPlayerDeath();
         }
     }
 }

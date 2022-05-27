@@ -29,4 +29,13 @@ public class EnemyMovement : MonoBehaviour
     {
         transform.localScale = new Vector2 (-(Mathf.Sign(myRigidBody.velocity.x)), 1f);
     }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if(other.tag == "Bullet")
+        {
+            Destroy(gameObject);
+            Debug.Log("Hit!");
+        }
+    }
 }
