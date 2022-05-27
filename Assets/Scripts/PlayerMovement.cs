@@ -46,7 +46,7 @@ public class PlayerMovement : MonoBehaviour
     void OnFire(InputValue value)
     {
         if (!isAlive) {return;}
-        
+
         Instantiate(bullet, gun.position, transform.rotation);
     }
 
@@ -133,6 +133,9 @@ public class PlayerMovement : MonoBehaviour
             isAlive = false;
             myAnimator.SetTrigger("Dying");
             myRigidBody.velocity = deathKick;
+            
+            //triggers the reset of the game when the player runs out of lives
+            FindObjectOfType<GameSession>().ProcessPlayerDeath();
         }
     }
 }
