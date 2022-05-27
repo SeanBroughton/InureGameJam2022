@@ -13,9 +13,11 @@ public class PlayerMovement : MonoBehaviour
     CapsuleCollider2D myBodyCollider;
     BoxCollider2D myFeetCollider;
     float gravityScaleAtStart;
+    bool isAlive = true;
     [SerializeField] float runSpeed = 10f;
     [SerializeField] float jumpSpeed = 5f;
     [SerializeField] float climbSpeed = 5f;
+    [SerializeField] Vector2 deathKick = new Vector2(10f, 10f);
 
     void Start()
     {
@@ -30,20 +32,26 @@ public class PlayerMovement : MonoBehaviour
     //runs all of our constant methods
     void Update()
     {
+        if(!isAlive) {return;}
+
         Run();
         FlipSprite();
         ClimbLadder();
+        Die();    
     }
 
     //creates number values to create player movement ex: (1,0) (0,1)
     void OnMove(InputValue value)
     {
+        if(!isAlive) {return;}
+
         moveInput = value.Get<Vector2>();
     }
 
     //gives the player the ability to jump
     void OnJump(InputValue value)
     {
+        if(!isAlive) {return;}
 
         //allows the player to jump only when they are touching the Ground
         if(!myBodyCollider.IsTouchingLayers(LayerMask.GetMask("Ground"))) {return;}
@@ -106,5 +114,15 @@ public class PlayerMovement : MonoBehaviour
         bool playerHasVerticalSpeed = Mathf.Abs(myRigidBody.velocity.y) > Mathf.Epsilon;
         myAnimator.SetBool("isClimbing", playerHasVerticalSpeed);
 
+    }
+
+    void Die()
+    {
+        if(myBodyCollider.IsTouchingLayers(LayerMask.GetMask("Enemies", "Hazards")))
+        {
+            isAlive = false;
+            myAnimator.SetTrigger("Dying");
+            myRigidBody.velocity = deathKick;
+        }
     }
 }
