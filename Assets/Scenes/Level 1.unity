@@ -25996,7 +25996,7 @@ GameObject:
   - component: {fileID: 1979175032}
   m_Layer: 11
   m_Name: Mon (Enemy)
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -26034,8 +26034,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.031687677, y: -0.27110738}
-  m_Size: {x: 1.0071131, y: 1.049364}
+  m_Offset: {x: 0.031687677, y: -0.36885387}
+  m_Size: {x: 1.0071131, y: 1.0071131}
   m_Direction: 0
 --- !u!50 &1979175028
 Rigidbody2D:
@@ -26259,18 +26259,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2375335186551492376, guid: 850938cf8b0d2f74aa2aabc486f517d5, type: 3}
-      propertyPath: jumpSpeed
-      value: 16
-      objectReference: {fileID: 0}
-    - target: {fileID: 2375335186551492376, guid: 850938cf8b0d2f74aa2aabc486f517d5, type: 3}
-      propertyPath: deathKick.x
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 2375335186551492376, guid: 850938cf8b0d2f74aa2aabc486f517d5, type: 3}
-      propertyPath: deathKick.y
-      value: 5
-      objectReference: {fileID: 0}
     - target: {fileID: 4589557995406318809, guid: 850938cf8b0d2f74aa2aabc486f517d5, type: 3}
       propertyPath: m_RootOrder
       value: 2
