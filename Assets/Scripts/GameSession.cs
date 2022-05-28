@@ -68,7 +68,8 @@ public class GameSession : MonoBehaviour
     //resets the game and refreshes the game manager
     void ResetGameSession()
     {
-       SceneManager.LoadScene(0);
-       Destroy(gameObject);
+        FindObjectOfType<ScenePersist>().ResetScenePersist();
+        SceneManager.LoadScene(0);
+        Destroy(gameObject);
     }
 }
