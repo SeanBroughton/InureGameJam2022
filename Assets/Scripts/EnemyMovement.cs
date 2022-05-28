@@ -35,7 +35,6 @@ public class EnemyMovement : MonoBehaviour
         if(other.tag == "Bullet")
         {
             Destroy(gameObject);
-            Debug.Log("Hit!");
         }
     }
 }
