@@ -26892,6 +26892,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2594154073734828997, guid: 4b90ad35f104fcb4ab395fbb7d1f518d, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2594154073734829051, guid: 4b90ad35f104fcb4ab395fbb7d1f518d, type: 3}
       propertyPath: m_AnimatedTarget
       value: 
@@ -26928,7 +26932,8 @@ PrefabInstance:
       propertyPath: m_BoundingShape2D
       value: 
       objectReference: {fileID: 45264480}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3544858665357622190, guid: 4b90ad35f104fcb4ab395fbb7d1f518d, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 4b90ad35f104fcb4ab395fbb7d1f518d, type: 3}
 --- !u!1001 &4589557996765172021
 PrefabInstance:
@@ -26937,6 +26942,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2375335186551492376, guid: 850938cf8b0d2f74aa2aabc486f517d5, type: 3}
+      propertyPath: mainCamera
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 4589557995406318809, guid: 850938cf8b0d2f74aa2aabc486f517d5, type: 3}
       propertyPath: m_RootOrder
       value: 2

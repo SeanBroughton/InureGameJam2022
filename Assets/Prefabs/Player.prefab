@@ -227,6 +227,7 @@ MonoBehaviour:
   deathKick: {x: 5, y: 5}
   bullet: {fileID: 3658363579966403172, guid: 53939360c37007a47a9e45b059b0bcb1, type: 3}
   gun: {fileID: 5344729391073486804}
+  applyCameraShake: 1
 --- !u!61 &6062840186232257549
 BoxCollider2D:
   m_ObjectHideFlags: 0

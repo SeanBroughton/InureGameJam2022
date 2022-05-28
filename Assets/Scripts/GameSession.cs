@@ -29,9 +29,9 @@ public class GameSession : MonoBehaviour
     void Start()
     {
         //turns the player lives into text on screen
-        livesText.text = playerLives.ToString();
+        livesText.text = playerLives.ToString("00");
         //displays the score on the screen
-        scoreText.text = score.ToString();
+        scoreText.text = score.ToString("000000");
     }
 
     //resets the game when player runs out of lives
@@ -51,7 +51,7 @@ public class GameSession : MonoBehaviour
     public void AddToScore(int pointsToAdd)
     {
         score += pointsToAdd;
-        scoreText.text = score.ToString();
+        scoreText.text = score.ToString("000000");
     }
 
     //reduces the amount of lives a player had and resets the level
@@ -62,7 +62,7 @@ public class GameSession : MonoBehaviour
        SceneManager.LoadScene(currentSceneIndex);
 
         //properly updates player lives text to the screen
-       livesText.text = playerLives.ToString();
+       livesText.text = playerLives.ToString("00");
     }
 
     //resets the game and refreshes the game manager
