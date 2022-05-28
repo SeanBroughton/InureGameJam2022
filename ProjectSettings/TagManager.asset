@@ -58,11 +58,11 @@ TagManager:
   - name: Hazards
     uniqueID: 2214272849
     locked: 0
-  - name: Interactables
-    uniqueID: 1349707741
-    locked: 0
   - name: Enemies
     uniqueID: 1204157115
+    locked: 0
+  - name: Interactables
+    uniqueID: 1349707741
     locked: 0
   - name: Player
     uniqueID: 626473235

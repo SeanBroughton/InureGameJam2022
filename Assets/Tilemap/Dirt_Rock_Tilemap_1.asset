@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Dirt_Rock_Tilemap_1
   m_EditorClassIdentifier: 
   m_Sprite: {fileID: -12953357, guid: 09192c3db51c97c45adab54d14c2c367, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 0.5723598, b: 0.5235849, a: 1}
   m_Transform:
     e00: 1
     e01: 0

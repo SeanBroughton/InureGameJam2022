@@ -6,9 +6,11 @@ public class CoinPickup : MonoBehaviour
 {
 
     bool notCollected = true;
+    bool wasCollected = false;
     float volumeScale = 1f;
     Animator myAnimator;
     [SerializeField] AudioClip coinPickupSFX;
+    [SerializeField] int pointsForCoinPickup = 100;
     AudioSource audioSource;
 
     //sets up collect animation for the coin
@@ -25,7 +27,7 @@ public class CoinPickup : MonoBehaviour
     {
         if(!notCollected) {return;}
         
-        if (other.tag == "Player")
+        if (other.tag == "Player" && !wasCollected)
         {
            StartCoroutine(CoinCollected());
         }
@@ -34,12 +36,15 @@ public class CoinPickup : MonoBehaviour
     IEnumerator CoinCollected()
     {
         notCollected = false;
+        wasCollected = true;
+        FindObjectOfType<GameSession>().AddToScore(pointsForCoinPickup);
         myAnimator.SetTrigger("Dying");
         audioSource.PlayOneShot(coinPickupSFX, volumeScale);
         
        
 
         yield return new WaitForSecondsRealtime(1f);
+        gameObject.SetActive(false);
         Destroy(gameObject);
     }
 

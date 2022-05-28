@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Background_Brown_Rock_Pattern_10
   m_EditorClassIdentifier: 
   m_Sprite: {fileID: -163122997, guid: a0b05916984d6b14bb1b0402239d4f92, type: 3}
-  m_Color: {r: 1, g: 0.89259434, b: 0.8443396, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Transform:
     e00: 1
     e01: 0

@@ -39,7 +39,8 @@ public class PlayerMovement : MonoBehaviour
         Run();
         FlipSprite();
         ClimbLadder();
-        Die();    
+        Die();
+        
     }
 
     //gives the player the ability to shoot bullets
@@ -79,7 +80,7 @@ public class PlayerMovement : MonoBehaviour
     //gives the player movement and speed on the x axis
     void Run()
     {
-    
+
         Vector2 playerVelocity = new Vector2 (moveInput.x * runSpeed, myRigidBody.velocity.y);
         myRigidBody.velocity = playerVelocity;
         
