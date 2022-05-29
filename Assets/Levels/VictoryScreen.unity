@@ -365,7 +365,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Rise
+  m_text: Rise again
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 0ca24a942ee90b340bbdce8ffade54eb, type: 2}
   m_sharedMaterial: {fileID: 1783283641986299425, guid: 0ca24a942ee90b340bbdce8ffade54eb, type: 2}
@@ -500,7 +500,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Death is only the Beginning
+  m_text: This is only the Beginning...
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 0ca24a942ee90b340bbdce8ffade54eb, type: 2}
   m_sharedMaterial: {fileID: 1783283641986299425, guid: 0ca24a942ee90b340bbdce8ffade54eb, type: 2}
@@ -809,7 +809,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Gameover
+  m_text: Victory
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 574a1a38f035e2b43955f48c0b933c64, type: 2}
   m_sharedMaterial: {fileID: -3128771769454663743, guid: 574a1a38f035e2b43955f48c0b933c64, type: 2}
@@ -1236,7 +1236,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Fall
+  m_text: Return
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 0ca24a942ee90b340bbdce8ffade54eb, type: 2}
   m_sharedMaterial: {fileID: 1783283641986299425, guid: 0ca24a942ee90b340bbdce8ffade54eb, type: 2}
