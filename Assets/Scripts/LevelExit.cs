@@ -28,7 +28,7 @@ public class LevelExit : MonoBehaviour
     //loads level 1 when player reaches the final level of the game
     if(nextSceneIndex == SceneManager.sceneCountInBuildSettings)
     {
-        nextSceneIndex = 0;
+        nextSceneIndex = 6;
     }
     
     FindObjectOfType<ScenePersist>().ResetScenePersist();
