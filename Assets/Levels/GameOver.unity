@@ -653,6 +653,74 @@ MonoBehaviour:
   m_TrackedDeviceOrientationAction: {fileID: 7970375526676320489, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
   m_DeselectOnBackgroundClick: 1
   m_PointerBehavior: 0
+--- !u!1001 &534445613
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 5319018966731526221, guid: 56a52e08704d7394ab7fe6a02831d8c6, type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5319018966731526221, guid: 56a52e08704d7394ab7fe6a02831d8c6, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5319018966731526221, guid: 56a52e08704d7394ab7fe6a02831d8c6, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5319018966731526221, guid: 56a52e08704d7394ab7fe6a02831d8c6, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5319018966731526221, guid: 56a52e08704d7394ab7fe6a02831d8c6, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5319018966731526221, guid: 56a52e08704d7394ab7fe6a02831d8c6, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5319018966731526221, guid: 56a52e08704d7394ab7fe6a02831d8c6, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5319018966731526221, guid: 56a52e08704d7394ab7fe6a02831d8c6, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5319018966731526221, guid: 56a52e08704d7394ab7fe6a02831d8c6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5319018966731526221, guid: 56a52e08704d7394ab7fe6a02831d8c6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5319018966731526221, guid: 56a52e08704d7394ab7fe6a02831d8c6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7237936117868475117, guid: 56a52e08704d7394ab7fe6a02831d8c6, type: 3}
+      propertyPath: m_Name
+      value: Level Manager
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 56a52e08704d7394ab7fe6a02831d8c6, type: 3}
+--- !u!114 &534445614 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6312299327887673487, guid: 56a52e08704d7394ab7fe6a02831d8c6, type: 3}
+  m_PrefabInstance: {fileID: 534445613}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7f9721d754dea94687bd78e1f3fddba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1012433242
 GameObject:
   m_ObjectHideFlags: 0
@@ -1034,7 +1102,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1416617116}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 534445614}
+        m_TargetAssemblyTypeName: LevelManager, Assembly-CSharp
+        m_MethodName: LoadMainMenu
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1416617116
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1480,7 +1560,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2022051523}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 534445614}
+        m_TargetAssemblyTypeName: LevelManager, Assembly-CSharp
+        m_MethodName: LoadGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2022051523
 MonoBehaviour:
   m_ObjectHideFlags: 0
