@@ -7,7 +7,7 @@ using TMPro;
 
 public class GameSession : MonoBehaviour
 {
-    [SerializeField] int playerLives = 1;
+    [SerializeField] public float playerLives = 1f;
     [SerializeField] TextMeshProUGUI livesText;
     [SerializeField] TextMeshProUGUI scoreText;
     [SerializeField] int score = 0;
@@ -29,10 +29,16 @@ public class GameSession : MonoBehaviour
     void Start()
     {
         //turns the player lives into text on screen
-        livesText.text = playerLives.ToString("00");
+        //livesText.text = playerLives.ToString("00");
         //displays the score on the screen
         scoreText.text = score.ToString("000000");
     }
+
+    void Update()
+    {
+        livesText.text = playerLives.ToString("00");
+    }
+    
 
     //resets the game when player runs out of lives
     public void ProcessPlayerDeath()
@@ -63,6 +69,15 @@ public class GameSession : MonoBehaviour
     public void ResetScore()
     {
         score = 0;
+        
+    }
+
+    public void AddLives()
+    {
+        Mathf.Clamp(playerLives, 0, int.MaxValue);
+        playerLives += .5f;
+        
+        
     }
 
     //reduces the amount of lives a player had and resets the level

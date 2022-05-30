@@ -22,10 +22,11 @@ public class LevelExit : MonoBehaviour
   {
     yield return new WaitForSecondsRealtime(levelLoadDelay);
 
+    FindObjectOfType<GameSession>().AddLives();
     int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
     int nextSceneIndex = currentSceneIndex + 1;
 
-    //loads level 1 when player reaches the final level of the game
+    //loads Victory when player reaches the final level of the game
     if(nextSceneIndex == SceneManager.sceneCountInBuildSettings)
     {
         nextSceneIndex = 6;
