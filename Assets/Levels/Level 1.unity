@@ -27468,6 +27468,10 @@ PrefabInstance:
       propertyPath: shootClip
       value: 
       objectReference: {fileID: 8300000, guid: 17cbe246bad539f44935441d4fe9d6b1, type: 3}
+    - target: {fileID: 8790076698563081595, guid: 72a53f6b4e406f441a83b96d3273e1ac, type: 3}
+      propertyPath: deathVolume
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8790076698563081861, guid: 72a53f6b4e406f441a83b96d3273e1ac, type: 3}
       propertyPath: m_Name
       value: AudioPlayer
