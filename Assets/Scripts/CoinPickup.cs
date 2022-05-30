@@ -9,9 +9,17 @@ public class CoinPickup : MonoBehaviour
     bool wasCollected = false;
     float volumeScale = 1f;
     Animator myAnimator;
+    NewAudioPlayer audioPlayer;
+    ScoreKeeper scoreKeeper;
     [SerializeField] AudioClip coinPickupSFX;
     [SerializeField] int pointsForCoinPickup = 100;
-    AudioSource audioSource;
+    //AudioSource audioSource;
+
+    void Awake()
+    {
+        audioPlayer = FindObjectOfType<NewAudioPlayer>();
+        scoreKeeper = FindObjectOfType<ScoreKeeper>();
+    }
 
     //sets up collect animation for the coin
     void Start()
@@ -19,7 +27,7 @@ public class CoinPickup : MonoBehaviour
         if(!notCollected) {return;}
 
         myAnimator = GetComponent<Animator>();
-        audioSource = GetComponent<AudioSource>();
+        //audioSource = GetComponent<AudioSource>();
     }
 
     //destroys the coin when the player touches it
@@ -38,8 +46,11 @@ public class CoinPickup : MonoBehaviour
         notCollected = false;
         wasCollected = true;
         FindObjectOfType<GameSession>().AddToScore(pointsForCoinPickup);
+        scoreKeeper.ModifyScore(pointsForCoinPickup);
         myAnimator.SetTrigger("Dying");
-        audioSource.PlayOneShot(coinPickupSFX, volumeScale);
+        audioPlayer.PlayCoinClip();
+        //audioSource.PlayOneShot(coinPickupSFX, volumeScale);
+        
         
        
 

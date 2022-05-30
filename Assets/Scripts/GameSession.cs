@@ -48,10 +48,21 @@ public class GameSession : MonoBehaviour
     }
 
     //add points to the score counter
-    public void AddToScore(int pointsToAdd)
+    public void AddToScore(int value)
     {
-        score += pointsToAdd;
+        score += value;
+        Mathf.Clamp(score, 0, int.MaxValue);
         scoreText.text = score.ToString("000000");
+    }
+
+     public int GetScore()
+    {
+        return score;
+    }
+
+    public void ResetScore()
+    {
+        score = 0;
     }
 
     //reduces the amount of lives a player had and resets the level
