@@ -137,6 +137,7 @@ public class PlayerMovement : MonoBehaviour
             isAlive = false;
             myAnimator.SetTrigger("Dying");
             myRigidBody.velocity = deathKick;
+            audioPlayer.PlayDeathClip();
             
             //triggers the reset of the game when the player runs out of lives
             FindObjectOfType<GameSession>().ProcessPlayerDeath();

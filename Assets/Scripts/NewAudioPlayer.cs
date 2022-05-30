@@ -12,6 +12,10 @@ public class NewAudioPlayer : MonoBehaviour
   [SerializeField] AudioClip shootClip;
   [SerializeField] [Range(0f, 1f)] float shootVolume = 1f;
 
+    [Header("--Death---")]
+  [SerializeField] AudioClip deathClip;
+  [SerializeField] [Range(0f, 1f)] float deathVolume = 1f;
+
   static NewAudioPlayer instance;
 
   AudioSource audioSource;
@@ -51,6 +55,11 @@ void ManageSingleton()
   public void PlayShootClip()
   {
       PlayClip(shootClip, shootVolume);
+  }
+
+  public void PlayDeathClip()
+  {
+      PlayClip(deathClip, deathVolume);
   }
 
   void PlayClip(AudioClip clip, float volume)

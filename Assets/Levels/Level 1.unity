@@ -27015,7 +27015,7 @@ PrefabInstance:
     - target: {fileID: 2594154072804249266, guid: 4b90ad35f104fcb4ab395fbb7d1f518d, type: 3}
       propertyPath: m_BoundingShape2D
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 45264480}
     - target: {fileID: 2594154073432501140, guid: 4b90ad35f104fcb4ab395fbb7d1f518d, type: 3}
       propertyPath: m_Follow
       value: 
@@ -27023,7 +27023,7 @@ PrefabInstance:
     - target: {fileID: 2594154073432501141, guid: 4b90ad35f104fcb4ab395fbb7d1f518d, type: 3}
       propertyPath: m_BoundingShape2D
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 45264480}
     - target: {fileID: 2594154073688826116, guid: 4b90ad35f104fcb4ab395fbb7d1f518d, type: 3}
       propertyPath: m_Name
       value: Cameras
@@ -27086,11 +27086,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2594154074033179675, guid: 4b90ad35f104fcb4ab395fbb7d1f518d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -29.79
+      value: -26.910824
       objectReference: {fileID: 0}
     - target: {fileID: 2594154074033179675, guid: 4b90ad35f104fcb4ab395fbb7d1f518d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.65
+      value: 2.65286
       objectReference: {fileID: 0}
     - target: {fileID: 2594154074033179876, guid: 4b90ad35f104fcb4ab395fbb7d1f518d, type: 3}
       propertyPath: orthographic size
@@ -27103,7 +27103,7 @@ PrefabInstance:
     - target: {fileID: 2594154074477628883, guid: 4b90ad35f104fcb4ab395fbb7d1f518d, type: 3}
       propertyPath: m_BoundingShape2D
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 45264480}
     - target: {fileID: 2594154074813727696, guid: 4b90ad35f104fcb4ab395fbb7d1f518d, type: 3}
       propertyPath: m_Follow
       value: 
@@ -27111,7 +27111,7 @@ PrefabInstance:
     - target: {fileID: 2594154074813727702, guid: 4b90ad35f104fcb4ab395fbb7d1f518d, type: 3}
       propertyPath: m_BoundingShape2D
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 45264480}
     m_RemovedComponents:
     - {fileID: 3544858665357622190, guid: 4b90ad35f104fcb4ab395fbb7d1f518d, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 4b90ad35f104fcb4ab395fbb7d1f518d, type: 3}
@@ -27460,6 +27460,10 @@ PrefabInstance:
       propertyPath: m_audioClip
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 8790076698563081595, guid: 72a53f6b4e406f441a83b96d3273e1ac, type: 3}
+      propertyPath: deathClip
+      value: 
+      objectReference: {fileID: 8300000, guid: c2d6dd2304294a348853cf5b4bbd0b9a, type: 3}
     - target: {fileID: 8790076698563081595, guid: 72a53f6b4e406f441a83b96d3273e1ac, type: 3}
       propertyPath: shootClip
       value: 
