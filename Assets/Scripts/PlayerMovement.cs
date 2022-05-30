@@ -12,6 +12,7 @@ public class PlayerMovement : MonoBehaviour
     Animator myAnimator;
     CapsuleCollider2D myBodyCollider;
     BoxCollider2D myFeetCollider;
+    NewAudioPlayer audioPlayer;
     float gravityScaleAtStart;
     bool isAlive = true;
     [SerializeField] float runSpeed = 10f;
@@ -28,6 +29,7 @@ public class PlayerMovement : MonoBehaviour
         myAnimator = GetComponent<Animator>();
         myBodyCollider = GetComponent<CapsuleCollider2D>();
         myFeetCollider = GetComponent<BoxCollider2D>();
+        audioPlayer = FindObjectOfType<NewAudioPlayer>();
         gravityScaleAtStart = myRigidBody.gravityScale;
     }
 
@@ -47,8 +49,9 @@ public class PlayerMovement : MonoBehaviour
     void OnFire(InputValue value)
     {
         if (!isAlive) {return;}
-
+        audioPlayer.PlayShootClip();
         Instantiate(bullet, gun.position, transform.rotation);
+        
     }
 
     //creates number values to create player movement ex: (1,0) (0,1)

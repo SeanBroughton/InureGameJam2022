@@ -26543,9 +26543,9 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 778f52cd6cfad8b42a4582eb3341ed5b, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.5
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -27015,7 +27015,7 @@ PrefabInstance:
     - target: {fileID: 2594154072804249266, guid: 4b90ad35f104fcb4ab395fbb7d1f518d, type: 3}
       propertyPath: m_BoundingShape2D
       value: 
-      objectReference: {fileID: 45264480}
+      objectReference: {fileID: 0}
     - target: {fileID: 2594154073432501140, guid: 4b90ad35f104fcb4ab395fbb7d1f518d, type: 3}
       propertyPath: m_Follow
       value: 
@@ -27023,7 +27023,7 @@ PrefabInstance:
     - target: {fileID: 2594154073432501141, guid: 4b90ad35f104fcb4ab395fbb7d1f518d, type: 3}
       propertyPath: m_BoundingShape2D
       value: 
-      objectReference: {fileID: 45264480}
+      objectReference: {fileID: 0}
     - target: {fileID: 2594154073688826116, guid: 4b90ad35f104fcb4ab395fbb7d1f518d, type: 3}
       propertyPath: m_Name
       value: Cameras
@@ -27086,11 +27086,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2594154074033179675, guid: 4b90ad35f104fcb4ab395fbb7d1f518d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -26.903282
+      value: -29.79
       objectReference: {fileID: 0}
     - target: {fileID: 2594154074033179675, guid: 4b90ad35f104fcb4ab395fbb7d1f518d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.65286
+      value: 2.65
       objectReference: {fileID: 0}
     - target: {fileID: 2594154074033179876, guid: 4b90ad35f104fcb4ab395fbb7d1f518d, type: 3}
       propertyPath: orthographic size
@@ -27103,7 +27103,7 @@ PrefabInstance:
     - target: {fileID: 2594154074477628883, guid: 4b90ad35f104fcb4ab395fbb7d1f518d, type: 3}
       propertyPath: m_BoundingShape2D
       value: 
-      objectReference: {fileID: 45264480}
+      objectReference: {fileID: 0}
     - target: {fileID: 2594154074813727696, guid: 4b90ad35f104fcb4ab395fbb7d1f518d, type: 3}
       propertyPath: m_Follow
       value: 
@@ -27111,7 +27111,7 @@ PrefabInstance:
     - target: {fileID: 2594154074813727702, guid: 4b90ad35f104fcb4ab395fbb7d1f518d, type: 3}
       propertyPath: m_BoundingShape2D
       value: 
-      objectReference: {fileID: 45264480}
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 3544858665357622190, guid: 4b90ad35f104fcb4ab395fbb7d1f518d, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 4b90ad35f104fcb4ab395fbb7d1f518d, type: 3}
@@ -27456,6 +27456,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8790076698563081594, guid: 72a53f6b4e406f441a83b96d3273e1ac, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8790076698563081595, guid: 72a53f6b4e406f441a83b96d3273e1ac, type: 3}
+      propertyPath: shootClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 17cbe246bad539f44935441d4fe9d6b1, type: 3}
     - target: {fileID: 8790076698563081861, guid: 72a53f6b4e406f441a83b96d3273e1ac, type: 3}
       propertyPath: m_Name
       value: AudioPlayer
