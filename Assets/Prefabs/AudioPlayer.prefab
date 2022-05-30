@@ -47,6 +47,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   coinClip: {fileID: 8300000, guid: 16c749e983b790e419c11a8ab3b077f9, type: 3}
   coinVolume: 1
+  shootClip: {fileID: 8300000, guid: 17cbe246bad539f44935441d4fe9d6b1, type: 3}
+  shootVolume: 1
+  deathClip: {fileID: 8300000, guid: 6fa3b7043f2a5e2469ed20b4742ea71d, type: 3}
+  deathVolume: 1
 --- !u!82 &8790076698563081594
 AudioSource:
   m_ObjectHideFlags: 0
