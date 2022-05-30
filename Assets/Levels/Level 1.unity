@@ -27080,6 +27080,18 @@ PrefabInstance:
       propertyPath: m_ChildCameras.Array.size
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2594154074033179675, guid: 4b90ad35f104fcb4ab395fbb7d1f518d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -26.910824
+      objectReference: {fileID: 0}
+    - target: {fileID: 2594154074033179675, guid: 4b90ad35f104fcb4ab395fbb7d1f518d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.65286
+      objectReference: {fileID: 0}
+    - target: {fileID: 2594154074033179876, guid: 4b90ad35f104fcb4ab395fbb7d1f518d, type: 3}
+      propertyPath: orthographic size
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 2594154074477628882, guid: 4b90ad35f104fcb4ab395fbb7d1f518d, type: 3}
       propertyPath: m_Follow
       value: 
@@ -27338,6 +27350,30 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1205944671695248520, guid: 4936bf3da15184041b0b6bca6e93848b, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 190.3121
+      objectReference: {fileID: 0}
+    - target: {fileID: 1205944671695248520, guid: 4936bf3da15184041b0b6bca6e93848b, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: -420.1881
+      objectReference: {fileID: 0}
+    - target: {fileID: 1205944671695248520, guid: 4936bf3da15184041b0b6bca6e93848b, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -95.1611
+      objectReference: {fileID: 0}
+    - target: {fileID: 1205944671695248520, guid: 4936bf3da15184041b0b6bca6e93848b, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 210.08905
+      objectReference: {fileID: 0}
+    - target: {fileID: 2167785645921979286, guid: 4936bf3da15184041b0b6bca6e93848b, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: -422.6924
+      objectReference: {fileID: 0}
+    - target: {fileID: 2167785645921979286, guid: 4936bf3da15184041b0b6bca6e93848b, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 211.34122
+      objectReference: {fileID: 0}
     - target: {fileID: 3619384891829710943, guid: 4936bf3da15184041b0b6bca6e93848b, type: 3}
       propertyPath: m_Name
       value: Game Session
